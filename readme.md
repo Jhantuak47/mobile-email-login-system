@@ -18,23 +18,32 @@ This is a simple Application to Demonstrate How we can implement login functiona
 This Application can also run using docker.
 
 Step-1: Install Docker and Docker-compose
-    - check version of docker and docker compose 
-    - use `docker -v` to check docker version {Docker version 20.10.2, build 20.10.2-0ubuntu1~18.04.2}
-    - use `docker-compose -v` to check docker-compose version {docker-compose version 1.21.2, build a133471}
+- check version of docker and docker compose 
+- use `docker -v` to check docker version {Docker version 20.10.2, build 20.10.2-0ubuntu1~18.04.2}
+- use `docker-compose -v` to check docker-compose version {docker-compose version 1.21.2, build a133471}
 
 Step-2: Go inside root directory. path/to/laravel_otp_docker/
+
 Step-3: Run `docker-compose build`
+
 Step-4: Run `docker-compose up -d`
+
 Till now your composer is up and running.
+
 Step-5: Go inside terminal or open terminal/cmd in root directory i,e. path/to/laravel_otp_docker/
+
 Step-6: Run `docker-compose exec app /bin/bash`
+
 Step-7: Run `composer install`.
-    - If you getting any error 
-    - Run `composer update`
+
+- If you getting any error 
+- Run `composer update`
+
 Step-8: inside /bin/bash (at your present location wehre you are now) Run `php artisan key:gen`
+
 Step-9: Run `php artisan migrate`
-    - If you getting any error
-    - Run `composer install`
+- If you getting any error
+- Run `composer install`
 
 ## To Acess the application while running using docker.
 - Open Web browser (chrome/firefox etc) and type http://localhost:9100/
